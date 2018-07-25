@@ -39,6 +39,8 @@ if(isset($res)){
         echo '<div id="pic_full">'.'<img src="data:image/*;base64,' . base64_encode($row['image']) . '" />'.'</div>';
         echo "<div align='left' id='text_full'>".$txt."</div>";
         echo "<label id='date_full'>".$data.$name."</label>";
+        echo "<button type='button' class='btn btn-secondary'>Edit</button>";
+        echo "<button type='button' class='btn btn-secondary'>Delete</button>";
         echo "</div>";
 
     }
