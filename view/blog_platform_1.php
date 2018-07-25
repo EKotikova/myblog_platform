@@ -31,7 +31,7 @@
       <?php include "C:\OpenServer\domains\myblog\blog_platform\model\writers.php"?>
             <form id="com" method="post" action="/index.php?sub=true">
                 <div class="col-md-11">
-                <input class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
+                <input name="mycomit" class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
                     <div>
                     <button id="scom" type="submit" class="btn btn-info">Comment</button>
                     </div>
