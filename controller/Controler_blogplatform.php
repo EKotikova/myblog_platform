@@ -22,4 +22,8 @@ else{
     include "view/blog_platform.php";
 }
 
+$formcom=filter_input(INPUT_GET,'sub');
+if(isset($formcom)){
+$inpucom=filter_input(INPUT_POST,'mycomit');
 
+}
