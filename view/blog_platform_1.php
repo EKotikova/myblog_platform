@@ -30,13 +30,12 @@
         <center>
       <?php include "C:\OpenServer\domains\myblog\blog_platform\model\writers.php"?>
             <form id="com" method="post" action="/index.php?sub=true">
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text"  id="mycommit" placeholder="My commit to the post">
+                <div class="col-md-11">
+                <input class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
+                    <div>
+                    <button id="scom" type="submit" class="btn btn-info">Comment</button>
                     </div>
-
                 </div>
-                <button type="submit" class="btn btn-info">Comment</button>
             </form>
         </center>
 
