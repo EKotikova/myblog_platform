@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a#reg{
+ margin-left: 1300px;
+}
+a#horiz{
+    padding-left:60px;
+
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+div#main{
+    margin-top: 50px;
+}
+
+div#pic{
+    float: left;
+    margin-left: 20px;
+    height: 105px;
+    width: 145px;
+
+}
+div#pic_full{
+    float: left;
+    margin-left: 30px;
+}
+
+#mycommit{
+    margin-left: 20px;
+}
+form#com{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+div#text{
+    margin-left: 190px;
+    width: 600px;
+}
+div#text_full{
+    margin-left: 500px;
+    width: 900px;
+
+}
+#h{
+    margin-left: 20px;
+}
+#date{
+    margin-top: 5px;
+    margin-right: 195px;
+}
+#date_full{
+    margin-top: 5px;
+    margin-left: 1120px;
+}
+
+div#post{
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 10px;
+}
+div#post_full{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 721px;
+}
+header{
+    position: relative;
+    background: url("../components/images/header/images_header.jpg") no-repeat top center ;
+    background-size:100%;
+    height: 139px;
+
+
+}
+footer{
+    background-color: lavender;
+    background-size: 100px;
+    height: 50px;
+    text-align: center;
+    text-decoration: blink;
+}
