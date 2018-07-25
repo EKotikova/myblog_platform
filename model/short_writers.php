@@ -13,7 +13,7 @@ $s=' by ';
 $db=mysqli_connect($host,$user,$password,$database) or
 die("Error connect db :".mysqli_error($db) );
 
-$query="Select id,headers,short_description,image,data_post,writers from arhive_post";
+$query="Select id,headers,short_description,short_image,data_post,writers from arhive_post";
 
 $res=mysqli_query($db,$query) or die("Error query:".mysqli_error($db));
 
@@ -34,7 +34,7 @@ if(isset($res)){
 
         echo "<div id='post'>";
         echo "<p><h5 id='h' align='left'>". $head."</h5></p>";
-        echo '<div id="pic">'.'<img src="data:image/*;base64,' . base64_encode($row['image']) . '" />'.'</div>';
+        echo '<div id="pic">'.'<img src="data:image/*;base64,' . base64_encode($row['short_image']) . '" />'.'</div>';
         echo "<div align='left' id='text'>".$short_txt."</div>";
         echo "<label id='date'>".$data.$name."<a href='http://myblog:81/blog_platform/index.php?w=".$id."'>Read More</a>"."</label>";
         echo "</div>";
