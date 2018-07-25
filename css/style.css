@@ -37,12 +37,21 @@ button#scom{
 }
 
 #mycommit{
+    margin-top: 20px;
     margin-left: 10px;
     margin-right:20px;
 
 }
+#edpost{
+   margin-top: 55px;
+    margin-left: 25px;
+}
+#delpost{
+    margin-top: 55px;
+    margin-left: 1px;
+}
 form#com{
-margin-bottom: 500px;
+margin-bottom: 400px;
     margin-left: 10px;
 
 }
@@ -64,7 +73,6 @@ div#text_full{
     margin-right: 195px;
 }
 #date_full{
-    margin-top: 5px;
     margin-left: 1120px;
 }
 
