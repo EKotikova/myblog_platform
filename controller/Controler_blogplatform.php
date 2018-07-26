@@ -33,3 +33,8 @@ $id=filter_input(INPUT_POST,'id');
 if(isset($text)){
     include "model/apdata.php";
 }
+
+$delpost=filter_input(INPUT_GET,'del');
+if(isset($delpost)){
+    include "model/delpost.php";
+}

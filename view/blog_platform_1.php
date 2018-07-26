@@ -49,7 +49,7 @@
 <script>
     $(document).ready(function(){
         $(function(){
-            $('button.btn').click(function(){
+            $('button#edpost').click(function(){
                 $('div.' + $(this).attr("rel")).fadeIn(500);
                 $('body').append("<div id='overlay'></div>");
                 $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});

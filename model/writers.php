@@ -41,7 +41,7 @@ if(isset($res)){
         echo "<label id='date_full'>".$data.$name."</label>";
         echo "</div>";
         echo "<button rel='edit' id='edpost' onclick='edit()' type='button' class='btn btn-secondary'>Edit</button>";
-        echo "<button id='delpost' onclick='del();' type='button' class='btn btn-secondary'>Delete</button>";
+        echo "<a href='/index.php?del=".$w."'><button id='delpost' type='button' class='btn btn-secondary'>Delete</button></a>";
 
     }
     mysqli_close($db);
