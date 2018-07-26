@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+<?php include 'C:\OpenServer\domains\myblog\blog_platform\model\edite_form.php'?>
 <body>
 <div>
     <header>
@@ -28,7 +29,7 @@
     </header>
     <div id="main">
         <center>
-      <?php include "C:\OpenServer\domains\myblog\blog_platform\model\writers.php"?>
+      <?php include 'C:\OpenServer\domains\myblog\blog_platform\model\writers.php'?>
             <form id="com" method="post" action="/index.php?sub=true">
                 <div class="col-md-11">
                 <input name="mycomit" class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
