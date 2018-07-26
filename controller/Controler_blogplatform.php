@@ -25,7 +25,9 @@ else{
 $formcom=filter_input(INPUT_GET,'sub');
 if(isset($formcom)){
 $inpucom=filter_input(INPUT_POST,'mycomit');
-
+if(isset($inpucom)){
+    include "model/create_commits.php";
+}
 }
 
 $text=filter_input(INPUT_POST,'correct');
