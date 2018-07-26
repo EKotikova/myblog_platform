@@ -36,7 +36,7 @@ if(isset($res)){
         echo "<p><h5 id='h' align='left'>". $head."</h5></p>";
         echo '<div id="pic">'.'<img src="data:image/*;base64,' . base64_encode($row['short_image']) . '" />'.'</div>';
         echo "<div align='left' id='text'>".$short_txt."</div>";
-        echo "<label id='date'>".$data.$name."<a href='http://myblog:81/blog_platform/index.php?w=".$id."'>Read More</a>"."</label>";
+        echo "<label id='date'>".$data.$name."<a href='http://myblog:81/index.php?w=".$id."'>Read More</a>"."</label>";
         echo "</div>";
 
     }

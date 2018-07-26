@@ -27,3 +27,9 @@ if(isset($formcom)){
 $inpucom=filter_input(INPUT_POST,'mycomit');
 
 }
+
+$text=filter_input(INPUT_POST,'correct');
+$id=filter_input(INPUT_POST,'id');
+if(isset($text)){
+    include "model/apdata.php";
+}

@@ -28,13 +28,18 @@
     </header>
     <div id="main">
         <center>
-      <?php include "C:\OpenServer\domains\myblog\blog_platform\model\short_writers.php";?>
+      <?php include 'C:\OpenServer\domains\myblog\model\short_writers.php';?>
         </center>
     </div>
 
 
 
 </div>
+
+
+<footer>
+    Copyright Kotikova  Elena 2018
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
         integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
@@ -44,9 +49,7 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
         integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-<footer>
-Copyright Kotikova  Elena 2018
-</footer>
+
 </body>
 </html>
 

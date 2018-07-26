@@ -3,19 +3,9 @@
  */
 
 
-var edit=function(){
-    var  texted=document.getElementById('post_full');
-    alert(texted);
+var edit=function (){
+    var  texted=document.getElementById('text_full');
     var areatxt=document.getElementById('corect');
-    alert(areatxt);
-    areatxt.innerText=texted.innerText;
-        $(function(){
-            $('div.' + $(this).attr("rel")).fadeIn(500);
+    areatxt.innerHTML=texted.innerHTML;
 
-            $('a.close').click(function () {
-                $(this).parent().fadeOut(100);
-                //  $('#overlay_new').remove('#overlay_new');
-                return false;
-            });
-        });
-}
+};

@@ -35,15 +35,19 @@ if(isset($res)){
 
 
         echo "<div id='post_full'>";
-        echo "<p><h5 id='h' align='left'>". $head."</h5></p>";
+        echo "<p><h5 id='h' align='left'>".$head."</h5></p>";
         echo '<div id="pic_full">'.'<img src="data:image/*;base64,' . base64_encode($row['image']) . '" />'.'</div>';
         echo "<div align='left' id='text_full'>".$txt."</div>";
         echo "<label id='date_full'>".$data.$name."</label>";
-        echo "<button id='edpost' onclick='edit();' type='button' class='btn btn-secondary'>Edit</button>";
-        echo "<button id='delpost' onclick='del();' type='button' class='btn btn-secondary'>Delete</button>";
         echo "</div>";
+        echo "<button rel='edit' id='edpost' onclick='edit()' type='button' class='btn btn-secondary'>Edit</button>";
+        echo "<button id='delpost' onclick='del();' type='button' class='btn btn-secondary'>Delete</button>";
 
     }
     mysqli_close($db);
 
 }
+
+
+
+

@@ -16,12 +16,11 @@
           integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="../components/js/edit.js"></script>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="components/js/edit.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<?php include 'C:\OpenServer\domains\myblog\blog_platform\model\edite_form.php'?>
+<?php include 'C:\OpenServer\domains\myblog\model\edite_form.php'?>
 <body>
 <div>
     <header>
@@ -30,7 +29,7 @@
     </header>
     <div id="main">
         <center>
-      <?php include 'C:\OpenServer\domains\myblog\blog_platform\model\writers.php'?>
+      <?php include 'C:\OpenServer\domains\myblog\model\writers.php'?>
             <form id="com" method="post" action="/index.php?sub=true">
                 <div class="col-md-11">
                 <input name="mycomit" class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
@@ -47,6 +46,26 @@
 
 </div>
 
+<script>
+    $(document).ready(function(){
+        $(function(){
+            $('button.btn').click(function(){
+                $('div.' + $(this).attr("rel")).fadeIn(500);
+                $('body').append("<div id='overlay'></div>");
+                $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+                return false;
+            });
+
+            $('a.close').click(function () {
+                $(this).parent().fadeOut(100);
+                 $('#overlay').remove('#overlay');
+                return false;
+            });
+        });
+    });
+</script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
         integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
         crossorigin="anonymous"></script>
@@ -58,6 +77,10 @@
 <footer>
 Copyright Kotikova  Elena 2018
 </footer>
+
+
+
+
 </body>
 </html>
 

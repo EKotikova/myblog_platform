@@ -15,7 +15,7 @@
     -webkit-border-radius: 15px;
     border-radius: 15px;
     z-index: 100;
-    behavior: url("http://myblog:81/blog_platform/PIE.htc");
+    behavior: url("http://myblog:81/PIE.htc");
 }
 #overlay {
     width: 100%;
@@ -40,7 +40,8 @@
 
 .edit{
     margin-left: -200px;
-    width: 400px;
+    width: 1000px;
+   height: 550px;
 }
 
 
@@ -135,6 +136,17 @@ header{
 
 
 }
+
+#s{
+    margin-left: 35px;
+}
+
+#corect{
+    width: 900px;
+    height: 480px;
+}
+
+
 footer{
     background-color: lavender;
     background-size: 100px;
