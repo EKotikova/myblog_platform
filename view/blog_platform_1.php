@@ -30,7 +30,7 @@
     <div id="main">
         <center>
       <?php include 'C:\OpenServer\domains\myblog\model\writers.php'?>
-            <form id="com" method="post" action="/index.php?sub=true">
+            <form id="com" method="post" action="http://myblog:81/index.php?sub=true">
                 <div class="col-md-11">
                 <input name="mycomit" class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
                     <div>
