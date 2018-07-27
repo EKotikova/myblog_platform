@@ -23,8 +23,8 @@
 <body>
 <div>
     <header>
-   <a id="reg"  href="registration.php"><button  class="btn btn-outline-primary">Registration</button></a>
-        <a id="horiz"  href="authorization.php"><button class="btn  btn-outline-primary">Authorization</button></a>
+   <a id="reg"  href="/index.php?reg=true"><button  class="btn btn-outline-primary">Registration</button></a>
+        <a id="horiz"  href="/index.php?user=true"><button class="btn  btn-outline-primary">Authorization</button></a>
     </header>
     <div id="main">
         <center>
