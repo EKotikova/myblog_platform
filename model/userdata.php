@@ -27,5 +27,5 @@ if(isset($_POST['user'])&& isset($_POST['email'])&& isset($_POST['password'])&& 
     else{
         echo "Please check password";
     }
-
+    mysqli_close($db);
 }
