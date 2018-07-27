@@ -8,12 +8,14 @@
 include "components/connect_db.php";
 
 if(isset($_POST['email'])&&isset($_POST['password'])){
+    $db=mysqli_connect($host,$user,$password,$database) or
+    die("Error connect db :".mysqli_error($db) );
+
     $email=$_POST['email'];
     $password=$_POST['password'];
 
 
-    $db=mysqli_connect($host,$user,$password,$database) or
-    die("Error connect db :".mysqli_error($db) );
+
     $query_1="Select nameusers from users WHERE email='".$email."' and password='".$password."'";
     $res_1=mysqli_query($db,$query_1) or die("error select:".mysqli_error($db));
     if(isset($res_1)){

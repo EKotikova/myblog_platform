@@ -154,3 +154,31 @@ footer{
     text-align: center;
     text-decoration: blink;
 }
+form#Signup{
+
+}
+
+input#username:required:valid{
+    border-color: green;
+}
+input#username:required:invalid{
+    border-color: red;
+}
+input#InputEmail1:required:valid{
+    border-color: green;
+}
+input#InputEmail1:required:invalid{
+    border-color: red;
+}
+input#Password1:required:valid{
+    border-color: green;
+}
+input#Password1:required:invalid{
+    border-color: red;
+}
+input#ConfirmPassword1:required:valid{
+    border-color: green;
+}
+input#ConfirmPassword1:required:invalid{
+    border-color: red;
+}
