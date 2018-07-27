@@ -30,7 +30,6 @@
 </form>
 
 <script>
-           if()
     function validateName(input){
        if(!input.value.match('^[a-zA-Z][a-zA-Z0-9-_/.]{1,16}$')){
            input.setCustomValidity("The user must start with a capital letter, must contain only letters and numbers in Latin. " +
