@@ -49,3 +49,10 @@ if(isset($regin)){
     $confpass=filter_input(INPUT_POST,'confpass');
 include "model/userdata.php";
 }
+//authorization
+$authorizin=filter_input(INPUT_GET,'authorizin');
+if(isset($authorizin)){
+    $emailhoriz=filter_input(INPUT_POST,'email');
+    $passhoriz=filter_input(INPUT_POST,'password');
+    include "model/checkuser.php";
+}
