@@ -16,6 +16,6 @@ if(isset($_GET['del'])){
     $res=mysqli_query($db,$queru)or die("Error :".mysqli_error($db));
 
     mysqli_close($db);
-    header("Location:http://myblog:81/index.php");
+    header("Location:http://myblog:81/index.php?name=".$_GET['name_w']."");
 }
 
