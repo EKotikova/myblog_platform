@@ -9,3 +9,4 @@ var edit=function (){
     areatxt.innerHTML=texted.innerHTML;
 
 };
+

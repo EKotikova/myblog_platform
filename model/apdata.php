@@ -16,6 +16,6 @@ if(isset($_POST['correct'])&& isset($_POST['id'])){
     $res=mysqli_query($db,$queru)or die("Error connect db :".mysqli_error($db));
 
     mysqli_close($db);
-    header("Location:http://myblog:81/index.php");
+    header("Location:http://myblog:81/index.php?w_n=".$_GET['w_n']."&name_w=".$_GET['name_w']."");
 }
 

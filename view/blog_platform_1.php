@@ -24,22 +24,14 @@
 <body>
 <div>
     <header>
-   <a id="reg"  href="registration.php"><button  class="btn btn-outline-primary">Registration</button></a>
-        <a id="horiz"  href="authorization.php"><button class="btn  btn-outline-primary">Authorization</button></a>
+   <a id="reg"  href="/index.php?reg=true&name=<?echo $_GET['name']?>"><button  class="btn btn-outline-primary">Registration</button></a>
+        <a id="horiz"  href="/index.php?user=true&name=<?echo $_GET['name']?>"><button class="btn  btn-outline-primary">Authorization</button></a>
     </header>
     <div id="main">
         <center>
       <?php include 'C:\OpenServer\domains\myblog\model\writers.php'?>
-            <form id="com" method="post" action="http://myblog:81/index.php?sub=true">
-                <div class="col-md-11">
-                <input name="mycomit" class="form-control"  type="text"  id="mycommit" placeholder="My commit to the post">
-                    <div>
-                    <button id="scom" type="submit" class="btn btn-info">Comment</button>
-                    </div>
-                </div>
-            </form>
+       <?php include 'C:\OpenServer\domains\myblog\model\comments.php' ?>
         </center>
-
     </div>
 
 
@@ -62,9 +54,25 @@
                 return false;
             });
         });
+        $(function(){
+            $('a.comment').click(function(){
+                $('div.' + $(this).attr("rel")).fadeIn(500);
+                $('body').append("<div id='overlay'></div>");
+                $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+                return false;
+            });
+            $('a.close').click(function () {
+                $(this).parent().fadeOut(100);
+                $('#overlay').remove('#overlay');
+                return false;
+            });
+        });
     });
 </script>
 
+<footer>
+    Copyright Kotikova  Elena 2018
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
         integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
@@ -74,12 +82,6 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
         integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-<footer>
-Copyright Kotikova  Elena 2018
-</footer>
-
-
-
 
 </body>
 </html>
