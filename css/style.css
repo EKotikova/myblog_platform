@@ -215,7 +215,7 @@ div#post_full{
     max-width: 1280px;
     min-width: 940px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: block;
 }
 header{
@@ -321,9 +321,10 @@ input[type='password']:invalid+.help-text::before {
 }
 
 div.my_com{
-    margin-top: 10px;
+    margin-top: 100px;
     border: 2px solid bisque;
     width: 1100px;
+    margin-bottom: 20px;
 
 }
 
@@ -338,7 +339,7 @@ div.my_com{
     margin-right: 900px;
 }
 footer{
-    margin-top: 200px;
+    margin-top: 10px;
     background-color: lavender;
     background-size: 100px;
     height: 50px;
