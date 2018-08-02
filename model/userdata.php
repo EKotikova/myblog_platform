@@ -38,16 +38,15 @@ if(isset($_POST['user'])&& isset($_POST['email'])&& isset($_POST['password'])&& 
                     }
                 } else {
                     echo "Please check password";
+                    echo "<script>document.location.replace('http://myblog:81/index.php?reg=false&name=".$_GET['name']."')</script>";
                 }
             }
         }
     }
     else{
         echo "Email is not individual";
-        echo "<script>document.location.replace('http://myblog:81/index.phpreg=true')</script>";
+        echo "<script>document.location.replace('http://myblog:81/index.php?reg=false&name=".$_GET['name']."')</script>";
     }
-
-
 
 }
 

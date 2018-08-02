@@ -36,8 +36,8 @@ if(isset($_POST['email'])&&isset($_POST['password'])){
                     echo "<script>document.location.replace('http://myblog:81/index.php?name=".$row2['nameusers']."')</script>";
                 }
                 else{
-                    echo "The user wasn't found here";
-                    echo "<script>document.location.replace('http://myblog:81/index.php?name=".$row2['nameusers']."'</script>";
+                    echo "<script>alert('The user was not found here.')</script>";
+                    echo "<script>document.location.replace('http://myblog:81/index.php?user=false&name=".$row2['nameusers']."'</script>";
                 }
             }
         }

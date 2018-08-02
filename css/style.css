@@ -253,68 +253,43 @@ button#in{
 
 
 
-input#username:valid:required{
+input#InputEmail1:valid  {border-color: green;}
+input#username:valid  {border-color: green;}
+input#ConfirmPassword1:valid  {border-color: green;}
+input#Password1:valid  {border-color: green;}
 
-    border-color: green;
-}
-input#username:invalid:required {
-    border-color: red;
-}
+input:invalid:not(:focus):not(:placeholder-shown) {border-color: red;}
 
-input#username:invalid:not(:focus){
-    border-color: dodgerblue;
-}
-
-input#InputEmail1:valid:required{
-
-    border-color: green;
-}
-input#InputEmail1:invalid:required {
-    border-color: red;
-}
-
-input#InputEmail1:invalid:not(:focus){
-    border-color: dodgerblue;
-}
-input#Password1:valid:required{
-
-    border-color: green;
-}
-input#Password1:invalid:required {
-    border-color: red;
-}
-
-input#Password1:invalid:not(:focus){
-    border-color: dodgerblue;
-}
-input#ConfirmPassword1:valid:required{
-
-    border-color: green;
-}
-input#ConfirmPassword1:invalid:required {
-    border-color: red;
-}
-
-input#ConfirmPassword1:invalid:not(:focus){
-    border-color: dodgerblue;
-}
-input:invalid:required:not(:focus) + .help-text::before {
-    content: '*Required';
-}
-
-input[type='text']:invalid+.help-text::before {
+input[type='text']:invalid:not(:focus):not(:placeholder-shown)+.help-text::before {
     content: 'The user must start with a capital letter, must contain only letters and numbers in Latin.The maximum length is 16 characters.';
 }
-input[type='email']:invalid+.help-text::before {
+input[type='email']:invalid:not(:focus):not(:placeholder-shown)+.help-text::before {
     content: "This email is'nt valided.";
 }
-input[type='password']:invalid+.help-text::before {
+input[type='password']:invalid:not(:focus):not(:placeholder-shown)+.help-text::before {
     content: 'The password field must be at least 8 characters. Must contain lowercase and uppercase letters and at least one digit';
 }
-input[type='password']:invalid+.help-text::before {
+input#ConfirmPassword1[type='password']:invalid:not(:focus):not(:placeholder-shown)+.help-text::before {
     content: "This password is't valided";
 }
 
+#InputEmail1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#username{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ConfirmPassword1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Password1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 #username{
     height: 50px;

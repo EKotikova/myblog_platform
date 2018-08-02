@@ -34,7 +34,7 @@ if(isset($_GET['name'])){
           integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src=""></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,22 +46,19 @@ if(isset($_GET['name'])){
         <center>
         <a href="/index.php?user=true&name=<?echo $_GET['name']?>">Already registered?Sign in</a>
     <form id="Signup" method="post" action="/index.php?regin=true&role=User">
-            <label for="username">Username</label>
             <input  name="user" type="text" class=" form-control" id="username"  oninput="validateName(this)" required pattern="^[a-zA-Z][a-zA-Z0-9-_/.]{1,16}$" placeholder="Username">
              <span class="help-text"></span>
 
-             <label for="InputEmail1">Email address</label>
-            <input  name="email" type="email" class="form-control" id="InputEmail1"  required placeholder="Email address">
+            <input  name="email" type="email" class="form-control" id="InputEmail1"  required placeholder="user@domain.zone">
              <span class="help-text"></span>
 
-            <label for="Password1">Password</label>
             <input  name="password" type="password" class="form-control" id="Password1"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
              <span class="help-text"></span>
 
-            <label for="ConfirmPassword1"> Confirm Password</label>
             <input  name="confpass" type="password" class="form-control" id="ConfirmPassword1" oninput="validateConfPassword(this)" required placeholder=" Confirm Password">
              <span class="help-text"></span>
-            <button id="in" type="submit" class="btn btn-primary">Sign in</button>
+
+        <button id="in" type="submit" class="btn btn-primary">Sign in</button>
     </form>
     </center>
         </div>

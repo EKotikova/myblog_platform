@@ -34,21 +34,21 @@ if(isset($_GET['name'])){
           integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src=""></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 <div>
+
+
     <header>
     </header>
     <center>
     <a href="/index.php?reg=true&name=<?echo $_GET['name']?>">Don't have an acount?Join now</a>
     <form id="Signin" method="post" action="/index.php?authorizin=true">
-            <label for="InputEmail1">Email address</label>
             <input name="email" type="email" class="form-control" id="InputEmail1" required  placeholder="Email address">
              <span class="help-text"></span>
-            <label for="Password1">Password</label>
+
             <input name="password" type="password" class="form-control" id="Password1" required placeholder="Password">
              <span class="help-text"></span>
         <button type="submit" class="btn btn-primary">Sign in</button>
